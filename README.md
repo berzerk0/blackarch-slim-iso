@@ -1,46 +1,47 @@
 # BlackArch Slim ISO
-## A smaller ISO compared to the regular one, with selected packages.
+## A Live-Boot-Friendly BlackArch ISO with a streamlined package list.
 
-## Map
+***
 
-- build.sh: Script to create the image.
+## Files
 
-- packages.x86_64: Default packages to be installed on the Live ISO.
+__build.sh__
+- Image creation script.
 
-- airootfs/root/customize_airootfs.sh: Script that runs commands on the Live ISO
-  during the building process. You can modify this file to run any
-  administration command or to modify any configuration file.
+__packages.x86_64__
+- Default packages installed on the Slim ISO.
 
-## Building the Image
+__airootfs/root/customize_airootfs.sh__
+- Executes commands on the Slim ISO during the building process. Modify this file to run a
+ administrative command or alter a configuration file.
 
-Clone the repo and run the following **as root**:
+
+
+### Building the Image
+
+Clone this repository, then run the following commands:
 
 ```
-# cd blackarch-slim-iso
-# rm -rfv out work
-# mkdir out work
-# ./build.sh -v
+cd blackarch-slim-iso
+rm -rfv out work
+mkdir out work
+./build.sh -v
 ```
 
 The finished ISO will be located in the `out` folder.
 
-login:
-- root:blackarch
-
-Note: make sure to check the README inside Desktop.
-
-## Screenshots
+### Screenshots
 
 ![empty](docs/empty.png)
 ![fakebusy](docs/fakebusy.png)
 ![another fakebusy](docs/fakebusy1.png)
 
-## Suggestions
+### Suggestions
 
-- If you have any ideas, please consider opening an issue.
-  Make sure to use the description box and write a useful and informative issue.
+*Have an idea to improve the Slim ISO?*
+- Please consider opening a New Issue!
+- Include a detailed description to ensure an effective, informative issue.
 
-- If you would like to see an application installed by default in the ISO
-  make sure to create an issue or pull request describing why it would be a good idea to
-  have that specific tool installed.
-
+*Would you like to see an application included in Slim ISO?*
+- Create an Issue or Pull Request
+- Write a detailed description outlining why the application should be included.
